@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>csv-test</title>
+</head>
+<body>
+<h5>test</h5>
+
+<form th:action="@{/batchController/upload}" method="post">
+<button>アップロード(コンソール出力)</button>
+</form>
+
+<form th:action="@{/batchController/uploadForDb}" method="post">
+<button>アップロード(DBをアップロード)</button>
+</form>
+
+<form th:action="@{/batchController/download}" method="post">
+<button>ダウンロード</button>
+</form>
+</body>
+</html>
